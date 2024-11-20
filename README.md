@@ -1,1 +1,1 @@
-Ссылка https://vladislavostudin.gihub.io/First-layout-for-Kata-Academy
+Ссылка https://vladislavostudin.github.io/First-layout-for-Kata-Academy/
