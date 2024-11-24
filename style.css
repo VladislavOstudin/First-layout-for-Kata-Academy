@@ -127,6 +127,7 @@ body {
     margin-bottom: 30px;
 }
 
+
 .navigation::before {
     content: "";
     display: block;
