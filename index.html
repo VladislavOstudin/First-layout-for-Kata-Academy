@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <title>First version of the layout</title>
@@ -14,85 +15,77 @@
     <div class="body-container">
         <div class="header-container">
             <header class="header">
-                <div class="header__burger">
-                    <a href="#"><img src="img/ic/burger.png" alt=""></a>
+                <div class="header-part">
+                    <button class="header__burger icon"></button>
+                    <div class="header__design-element-1"></div>
+                    <div class="header__logo">
+                        <img src="img/Logo.svg" alt="CSP">
+                    </div>
                 </div>
-                <div class="header__design-element-1">
-                    <img src="img/divider.svg" alt="">
-                </div>
-                <div class="header__logo"></div>
-                <div class="header__distance-block"> </div>
-                <div class="header__call">
-                    <a href="#"><img src="img/ic/call.png" alt=""></a>
-                </div>
-                <div class="header__chat">
-                    <a href="#"><img src="img/ic/chat.png" alt=""></a>
-                </div>
-                <div class="header__profile">
-                    <a href="#"><img src="img/ic/profile.png" alt=""></a>
-                </div>
-                <div class="header__design-element-2">
-                    <img src="img/divider.svg" alt="">
-                </div>
-                <div class="header__repair">
-                    <a href="#"><img src="img/ic/repair.png" alt=""></a>
-                </div>
-                <div class="header__checkstatus">
-                    <a href="#"><img src="img/ic/checkstatus.png" alt=""></a>
+                <div class="header-part">
+                    <button class="header__call icon"></button>
+                    <button class="header__chat icon"></button>
+                    <button class="header__profile icon"></button>
+                    <div class="header__design-element-2"></div>
+                    <button class="header__repair icon"></button>
+                    <button class="header__checkstatus icon"></button>
                 </div>
             </header>
         </div>
 
         <main class="main">
             <section class="headline">
-
-                <div class="headline__design-element">
-                    <img src="img/highlight.svg" alt="">
-                </div>
+                <div class="headline__design-element"></div>
                 <h1 class="headline-title">Услуги и сервисы</h1>
                 <div class="headline__buttons">
-
-                    <button class="headline__button">
-                        Оставить заявку
-                        <img src="img/ic/repair.png" alt="">
-                    </button>
-
-
-
-                    <button class="headline__button">
-                        Статус ремонта
-                        <img src="img/ic/checkstatus.png" alt="">
-                    </button>
-
+                    <div class="headline__button">
+                        <button class="headline__button-repair">
+                            Оставить заявку
+                        </button>
+                        <div class="headline__repair--symbol"></div>
+                    </div>
+                    <div class="headline__button">
+                        <button class="headline__button-checkstatus">
+                            Статус ремонта
+                        </button>
+                        <div class="headline__checkstatus--symbol"></div>
+                    </div>
                 </div>
             </section>
             <section class="navigation">
-                <nav class="buttons-navigation">
-                    <button class="buttons-navigation__button buttons-navigation__button--active">Ремонтируемые
-                        бренды</button>
-                    <button class="buttons-navigation__button">Ремонтируемые устройства</button>
-                    <button class="buttons-navigation__button">Цены на услуги</button>
-                    <button class="buttons-navigation__button">Адреса сервисных центров</button>
-                    <button class="buttons-navigation__button">Специальные цены</button>
-                    <button class="buttons-navigation__button">Отзывы</button>
-                </nav>
+                <ul class="buttons-navigation">
+                    <li class="buttons-navigation__button buttons-navigation__button--active">Ремонтируемые
+                        бренды</li>
+                    <li class="buttons-navigation__button">Ремонтируемые устройства</li>
+                    <li class="buttons-navigation__button">Цены на услуги</li>
+                    <li class="buttons-navigation__button">Адреса сервисных центров</li>
+                    <li class="buttons-navigation__button">Специальные цены</li>
+                    <li class="buttons-navigation__button">Отзывы</li>
+                </ul>
             </section>
             <article class="item">
                 <div class="item__text">
-                    <h3>Мы являемся авторизованным сервисным центром по ремонту техники
+                    <p>Мы являемся авторизованным сервисным центром по ремонту техники
                         Dell.
-                        Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                    </h3>
-                    <br />
-                    <h3>Мы успешно работаем с 1992 года и заслужили репутацию надежного
-                        партнера</h3>
-                    <br />
-                    <button class="item__button">
-                        <img src="img/ic/expand.png" alt="">
-                        Читать далее
-                    </button>
+                        Только у нас вы можете отремонтировать свой ноутбук Dell с 
+                        официальной гарантией производителя.
+                        <br />
+                        <br />
+                        Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                        партнера, что подтверждает большое количество постоянных клиентов.
+                        Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                        очередь, советуют нас родным и близким.
+                    </p>
+                    <div class="read-more">
+                        <div class="read-more__symbol"></div>
+                        <button class="read-more__button">
+                            Читать далее
+                        </button>
+                    </div>
                 </div>
-                <div class="item__img"></div>
+                <div class="item__img">
+                    <img src="img/IMG_1.png" alt="фото к статье">
+                </div>
             </article>
         </main>
 
